@@ -1,1 +1,81 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "./scss/custom" ;
+
+.full-page {
+    min-height: calc(100vh - 100px);
+}
+
+.make-dark {
+    background-color: #222222 !important ;
+    color: #ffffff !important ;
+}
+
+
+// directive styles
+
+[appDiarycard],
+[appStorycat] {
+   
+    //min-height: 550px ;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.wrapper {
+    background-color: rgba(200, 210, 219, 0.486) !important ;
+    border: 2px solid lightsalmon !important ;
+    color: #000000 !important ;
+    display: flex  ;
+    flex-direction: column;
+    justify-content: space-between !important ;
+    padding: 1rem ;
+
+        & h4 {
+            color: darkgreen !important ;
+            text-align: center !important ;
+            
+        }
+
+        & .entryblock {
+            flex-grow: 3 ;
+        }
+
+
+        & .timestamp {
+            align-self: flex-end !important;
+        }
+
+
+}
+
+.wrapper-alt {
+    background-color: rgb(15, 5, 51) !important ;
+    border: 4px solid rgb(255, 224, 248) !important ;
+    color: #ffffff !important ;
+    display: flex ;
+    flex-direction: column;
+    justify-content: space-between !important ;
+
+        & h4 {
+            color: lightsalmon !important  ;
+            text-align: center !important ;
+        }
+
+        & .entryblock {
+            //align-self: stretch;
+            flex-grow: 3 ;
+        }
+
+        & .timestamp {
+            align-self: flex-end !important ;
+        }
+
+
+
+}
+
+
+    
+
+

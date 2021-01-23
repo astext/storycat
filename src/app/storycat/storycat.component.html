@@ -1,0 +1,70 @@
+<div class="container full-page">
+
+    <div class="row">
+
+        <div class="col-sm-12" [ngStyle]="{background: htagShade}">
+            <h2>Story Catalog Jan 2021</h2>
+        </div>
+    </div>
+
+    <div class="row">
+
+        <div class="col-sm-12 col-md-6 p-5">
+            Form fields to search &amp; tailor output
+        </div>
+
+        <div class="col-sm-12 col-md-6 p-5">
+            <button type="button" (click)="classesSwap()" class="btn btn-primary">Toggle style</button>
+
+
+        </div>
+
+    </div>
+
+
+    <div class="row">
+        <div class="col-sm-12 col-md-9 mt-3" [ngStyle]="{background: altShade}">
+
+            <div *ngFor="let story of stories">
+
+                <article appStorycat [ngClass]="classes" #cardtrim>
+
+                    <h3>Story data in an article tag</h3>
+
+                    <h4>{{ story.title }}</h4>
+                    <div class="">{{ story.filename }}</div>
+                    <div class="">{{ story.dateorigin }}</div>
+                    <div class="">{{ story.shortname }}</div>
+                    <div class="">{{ story.byline }}</div>
+                    <div class="">{{ story.keywords }}</div>
+                    <div class="">{{ story.catalog }}</div>
+                    <div class="">{{ story.subcatalog }}</div>
+
+
+
+
+
+
+
+                </article>
+
+            </div>
+
+
+
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</div>

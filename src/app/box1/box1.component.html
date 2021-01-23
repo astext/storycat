@@ -1,0 +1,38 @@
+<div class="container box1-top full-page">
+
+    <div class="row">
+        
+        <div class="col-sm-12 pb-3">
+            
+            <h3>Box1 - directives and more</h3>
+
+
+            <h4 #subhead>{{originalSub}}</h4>
+
+            
+        </div>
+        
+        <div *ngFor="let diar of diary" class="col-sm-12 col-md-6">
+            
+            <div appDiarycard [ngClass]="classes" #cardtrim>
+                
+                <h4>{{ diar.title }}</h4>
+
+                <div class="entryblock">{{ diar.entry  }}</div>
+
+                <div class="timestamp">{{ diar.diarytime }}</div>
+            </div>
+        
+        </div>
+
+       
+
+
+            
+        
+
+    
+    </div>
+
+
+</div>

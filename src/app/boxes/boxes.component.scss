@@ -1,0 +1,20 @@
+@import "../../styles.scss" ;
+
+.boxes-top {
+    padding-top: .5rem ;
+
+    & .boxes-tiles {
+        min-height: 150px ;
+        border: thin solid #d41b1b ;
+        margin-bottom: 1rem;;
+    }
+
+
+}
+
+.make-dark {
+    border-radius: 20px !important ;
+    border: thin solid black ;
+
+
+}
