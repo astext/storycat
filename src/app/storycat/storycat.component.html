@@ -3,14 +3,14 @@
     <div class="row">
 
         <div class="col-sm-12" [ngStyle]="{background: htagShade}">
-            <h2>Story Catalog Jan 2021</h2>
+            <h2>Story Catalog</h2>
         </div>
     </div>
 
     <div class="row">
 
         <div class="col-sm-12 col-md-6 p-5">
-            Form fields to search &amp; tailor output
+            Cards and fields to search &amp; tailor output
         </div>
 
         <div class="col-sm-12 col-md-6 p-5">
@@ -29,16 +29,43 @@
 
                 <article appStorycat [ngClass]="classes" #cardtrim>
 
-                    <h3>Story data in an article tag</h3>
 
-                    <h4>{{ story.title }}</h4>
-                    <div class="">{{ story.filename }}</div>
+                    <h3>{{ story.title }}</h3>
+                    <!-- <div class="">{{ story.filename }}</div>
                     <div class="">{{ story.dateorigin }}</div>
                     <div class="">{{ story.shortname }}</div>
                     <div class="">{{ story.byline }}</div>
                     <div class="">{{ story.keywords }}</div>
                     <div class="">{{ story.catalog }}</div>
-                    <div class="">{{ story.subcatalog }}</div>
+                    <div class="">{{ story.subcatalog }}</div> -->
+
+                    <dl class="sc-dl">
+                        <dt>file</dt>
+                        <dd>{{ story.filename }} </dd>
+
+                        <dt>date</dt>
+                        <dd>{{ story.dateorigin }} </dd>
+
+                        <dt>short</dt>
+                        <dd>{{ story.shortname }} </dd>
+
+                        <dt>byline</dt>
+                        <dd>{{ story.byline }} </dd>
+
+                        <dt>keywords</dt>
+                        <dd>{{ story.keywords }} </dd>
+
+                        <dt>catalog</dt>
+                        <dd>{{ story.shortname }} </dd>
+
+                        <dt>subcat</dt>
+                        <dd>{{ story.subcatalog }} </dd>
+
+
+
+
+
+                    </dl>
 
 
 

@@ -21,14 +21,14 @@ export class StorycatService {
 
   stories: Stories[] = [
     {
-      title: "title of the story 1",
-      filename: "the filename of the story",
-      dateorigin: "",
-      shortname: "short name",
-      byline: "the byline, if any",
-      keywords: "key words to tag the story",
-      catalog: "the catalog, if any",
-      subcatalog: "sub catalog, if any"
+      title: "The Buildings and Birds Inspector",
+      filename: "buildingsbirds-tales-medium-future.txt",
+      dateorigin: "April 2021",
+      shortname: "Buildings & Birds",
+      byline: "A Tale of the Medium Future",
+      keywords: "High rise rooftops, birds, shelter, inspection, conflict",
+      catalog: "MediumFuture",
+      subcatalog: "short"
 
     },
     {

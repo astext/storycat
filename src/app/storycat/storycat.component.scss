@@ -1,0 +1,17 @@
+dl.sc-dl {
+    
+    & dt {
+        display: block;
+        float: left;
+        min-width: 100px;
+        color: green;
+        text-align: right;
+    }
+    
+    
+    & dd {
+        color: red ;
+        margin-left: 1rem !important ;
+    }
+    
+}

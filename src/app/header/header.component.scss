@@ -6,3 +6,20 @@ nav {
 .lg-header {
     background: linear-gradient(90deg, rgba(209,208,217,0.39252791591196756) 0%, rgba(196,209,212,0.6271647874203474) 35%, rgba(227,244,250,0.8087290332304033) 100%);
 }
+
+nav.storycat_hdr div {
+
+    & h1 span.fa-cat {
+
+        &:first-of-type {
+            color: hsla(320, 100%, 50%, 0.445) ;
+        }
+
+        &:last-of-type {
+            color: hsla(0, 87%, 53%, 0.404) ;
+        }
+
+     }
+
+}
+
